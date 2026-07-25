@@ -245,15 +245,15 @@ SCREENSHOT I (paste here): W3C validator result after uploading booking.html.
 
 5. Evaluation of AI-generated low-fidelity wireframes
 
-AI wireframe tools were used to produce early layouts for the homepage, destinations explorer and booking inquiry (see Appendix).
+AI wireframe tools (UX Magic / similar) were used to produce low-fidelity layouts for the site pages. Because the finished website has nine HTML pages, wireframes were planned for all nine pages. The prompts and wireframe images are in the Appendix.
 
-What AI got right: clear hero and CTA structure; a filter bar above a card grid; a stepped booking form that matches how users fill enquiries.
+What AI got right: the tools captured the fixed top navigation, hero plus CTA pattern on Home, filter bar plus card grid on Destinations, package/ship card grids, and a stepped booking form structure close to the final enquiry page.
 
-What AI got wrong / what we changed: early suggestions used multi-colour dashboard chrome and dense cards; the final site moved to a strict monochrome system, richer catalogue (packages/ships), and XML-driven rendering instead of static placeholder cards. Some AI layouts implied breadcrumbs everywhere; we used a fixed global nav plus back links on detail pages.
+What AI got wrong / what we changed: early outputs sometimes looked like colourful dashboards or generic travel templates. The final site uses a strict monochrome black/white UI, shared header/footer injected by JavaScript, XML-driven cards, detail pages with back links instead of full breadcrumbs, and offline self-hosted fonts. We adjusted spacing, button style, and content sections (About FAQs, Terms legal blocks, spaceship spec table) by hand in HTML/CSS.
 
-Inclusivity: high-contrast black/white supports readability; labels on all form controls; responsive collapse of grids and a mobile menu improve small-screen use. We still rely on category fallbacks where individual destination photos are missing, which is a content limitation rather than a layout one.
+Inclusivity: high-contrast black/white supports readability; form controls have labels (and fieldsets for radio/checkbox groups); responsive grids and a mobile menu help small screens. Category image fallbacks keep cards usable when individual photos are missing.
 
-Ethical considerations: AI layouts are a starting point, not a substitute for human judgement. Prompts and outputs are disclosed in the Appendix; visual assets and branding were adapted for an original fictional agency; we did not treat generated wireframes as final accessible design without review.
+Ethical considerations: AI wireframes are a starting point, not a substitute for human design judgement or accessibility testing. Prompts and outputs are disclosed in the Appendix. The fictional Interstellar Agency branding and final implementation were reviewed and built by us; we did not treat generated wireframes as finished accessible pages without validation and WAVE checks.
 
 
 6. References
@@ -284,23 +284,50 @@ SCREENSHOT P (paste here): terms.html.
 
 Appendix: Screenshots of low-fidelity wireframes
 
-IMAGE R (insert file): Planning_and_Docs/Interstellar Homepage Wireframe-export.png
-IMAGE S (insert file): Planning_and_Docs/Destinations Explorer Wireframe-export.png
-IMAGE T (insert file): Planning_and_Docs/Booking Inquiry Wireframe-export.png
+Insert these files from Planning_and_Docs/ (already generated):
+
+WIREFRAME 1 (Home): Home Wireframe-export.png
+WIREFRAME 2 (Destinations): Destinations Explorer-export.png
+WIREFRAME 3 (Packages list): Travel Packages-export.png
+WIREFRAME 4 (Package detail): Package Detail-export.png
+WIREFRAME 5 (Spaceships list): Spaceships Fleet-export.png
+
+Still generate and insert these four (missing from the folder right now):
+
+WIREFRAME 6 (Spaceship detail): save as Spaceship Detail-export.png
+WIREFRAME 7 (Booking): save as Booking Inquiry-export.png
+WIREFRAME 8 (About): save as About Agency-export.png
+WIREFRAME 9 (Terms): save as Terms Conditions-export.png
 
 
 Appendix: Prompts
 
-Use (or adapt) these as the prompts recorded for Task A:
+Prompt 1 — Home (index.html)
+Create a low-fidelity grayscale desktop wireframe that matches this exact homepage structure for Interstellar Agency / Orion Apex. Fixed top header: left logo ORION APEX, center nav Home Destinations Packages Spaceships Book Journey About (Home active), right circular theme toggle. Full-viewport hero with headline EXPLORE THE UNKNOWN, subtitle, two outline buttons EXPLORE DESTINATIONS and VIEW PACKAGES, and SCROLL TO EXPLORE at bottom. Below: three stat boxes 90 Destinations, 15 Curated Packages, 6 Cosmic Categories. Then section title FREQUENTLY VISITED TRAVEL PACKAGES AND PLACES and a 3-column card grid. Footer with four columns and a floating chat button bottom-right. Grayscale boxes only, no colour photos.
 
-Prompt 1 — Homepage
-Create a low-fidelity wireframe for a premium space-travel agency homepage named Interstellar Agency. Include a top navigation bar with logo and links (Home, Destinations, Packages, Book, About), a full-width hero with headline Explore the Unknown, short supporting text, two CTA buttons, and a featured destinations section below. Desktop layout, simple grayscale boxes only.
+Prompt 2 — Destinations (destinations.html)
+Create a low-fidelity grayscale desktop wireframe for Destinations Explorer. Same header with Destinations active. Left: H1 Destinations Explorer plus intro text; right: search box Search destinations. Filter pills: All (active), Nebulas, Stars, Natural Satellites, Non-Habitable Planets, Habitable Planets, Black Holes. Results line 90 destinations shown. 3-column cards with image, title, category badge, stars, description, Distance in Lightyears, Required Ship, price and Select button. Footer plus chat bubble. Grayscale only.
 
-Prompt 2 — Destinations explorer
-Create a low-fidelity wireframe for a destinations explorer page. Show page title, a horizontal row of category filter buttons (All, Nebulas, Stars, Planets, Black Holes, etc.), a search field, and a responsive 3-column card grid. Each card has an image placeholder, title, short text, and a select button. Grayscale wireframe style.
+Prompt 3 — Packages list (packages.html)
+Create a low-fidelity grayscale desktop wireframe for Travel Packages. Header with Packages active. H1 Travel Packages, short intro, no search or filters. 3-column package cards: image, title, Package badge, stars, description, Duration, Stops, price, Details button. Footer plus chat bubble. Grayscale only.
 
-Prompt 3 — Booking inquiry
-Create a low-fidelity wireframe for a travel booking inquiry form in three steps: (1) traveler name and email, (2) spacecraft dropdown and travel-class radio buttons, (3) checkbox add-ons and a large comments textarea, with a submit button at the bottom. Clean card layout, desktop width, grayscale.
+Prompt 4 — Package detail (package.html)
+Create a low-fidelity grayscale desktop wireframe for Package Detail. Back link All packages. Two columns: left large image; right Curated Package badge, title, stars, description, Duration Destinations Price specs, Book This Journey button. Section Destinations On This Journey with stop cards. Section Frequently Asked Questions accordion rows. Footer plus chat bubble. Grayscale only.
+
+Prompt 5 — Spaceships list (spaceships.html)
+Create a low-fidelity grayscale desktop wireframe for Our Spaceships. Header with Spaceships active. H1 Our Spaceships, short intro, no filters. 3-column ship cards: image, title, class badge, stars, description, Passenger Capacity, Cruising Speed, fuel text, View Details button. Footer plus chat bubble. Grayscale only.
+
+Prompt 6 — Spaceship detail (spaceship.html)  [STILL NEED THIS WIREFRAME]
+Create a low-fidelity grayscale desktop wireframe for Spaceship Detail. Back link Back to the fleet. Two columns: left ship image; right class badge, title, stars, description, Book This Ship button. Specifications table rows: Class, Hull and Materials, Onboard Experience, Passenger Capacity, Cruising Speed, Range, Fuel Source. Footer plus chat bubble. Grayscale only.
+
+Prompt 7 — Booking (booking.html)  [STILL NEED THIS WIREFRAME]
+Create a low-fidelity grayscale desktop wireframe for Booking Inquiry. Header with Book Journey active. H1 Booking Inquiry plus intro. Form card Passenger Request Details with step 1 Traveler Name and Contact Address; step 2 Preferred Spacecraft dropdown and Class of Travel radios Economy Business First Class; step 3 add-on checkboxes and Special Requirements textarea; Submit Inquiry button. Footer plus chat bubble. Grayscale only.
+
+Prompt 8 — About (about.html)  [STILL NEED THIS WIREFRAME]
+Create a low-fidelity grayscale desktop wireframe for About the Agency. Header with About active. Page header title and tagline. Sections Our Mission, Our Destinations with six bullets, Curated Packages, Our Fleet, Safety, then FAQ accordion. Footer plus chat bubble. Grayscale only.
+
+Prompt 9 — Terms (terms.html)  [STILL NEED THIS WIREFRAME]
+Create a low-fidelity grayscale desktop wireframe for Terms and Conditions. Page header Terms and Conditions. Numbered sections Booking and Reservation, Cancellation Policy, Travel Documents, Liability, Safety and Conduct, Privacy. Text-heavy single column, standard footer, chat bubble. Grayscale only.
 
 
 Final packaging checklist (before 12:00)

@@ -587,7 +587,9 @@ function buildChatbot() {
         <div class="chat-head"><h4>Ask Orion</h4><button class="chat-close" aria-label="Close chat">&times;</button></div>
         <div class="chat-msgs" id="chat-msgs"></div>
         <form class="chat-input-row" id="chat-form">
-            <input type="text" id="chat-input" placeholder="Ask about destinations, ships, prices…" autocomplete="off">
+            <input type="text" id="chat-input" name="chat-input"
+                   placeholder="Ask about destinations, ships, prices…" autocomplete="off"
+                   aria-label="Ask Orion about destinations, ships, or booking">
             <button type="submit" class="chat-send">Send</button>
         </form>`;
     document.body.appendChild(launcher);

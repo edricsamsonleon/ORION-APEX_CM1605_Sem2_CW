@@ -1,16 +1,28 @@
 /* =========================================================================
    INTERSTELLAR AGENCY — global.css
    Pure black & white (monochrome) theme with a light/dark toggle.
-   Everything is plain CSS. Fonts are self-hosted (below) so they work even
-   when the site is opened directly from a file, with no internet.
+   Fonts are self-hosted below so the site works fully offline from file://
+   (no Google Fonts / CDN — required for local viva demos).
 
    Emphasis is done with BOLD text, never colour — every word is either pure
    white (#fff) or pure black (#000), depending on the active theme.
    ========================================================================= */
 
-/* ---- Self-hosted variable fonts (work offline / from file://) ---- */
-@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Archivo.woff2') format('woff2');}
-@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Inter.woff2') format('woff2');}
+/* ---- Self-hosted fonts (offline / file:// — nothing loaded from the internet) ---- */
+@font-face {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('../assets/fonts/Archivo.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('../assets/fonts/Inter.woff2') format('woff2');
+}
 
 /* No animated theme/hover transitions until the page is revealed — stops a flashy first paint. */
 html:not(.app-ready) * { transition: none !important; }
@@ -461,7 +473,23 @@ body:has(.hero) {
    10. FORM CONTROLS
 ========================================= */
 .form-group { margin-bottom: var(--sp-md); }
-.form-group > label { display: block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; }
+fieldset.form-group {
+    border: 0;
+    margin: 0 0 var(--sp-md);
+    padding: 0;
+    min-width: 0;
+}
+.form-group > label,
+.form-group > legend {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    padding: 0;
+    color: var(--text);
+}
 
 .form-group input,
 .form-group select,

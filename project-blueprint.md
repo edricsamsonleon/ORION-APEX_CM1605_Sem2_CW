@@ -213,7 +213,7 @@ Wireframes (planning): `Planning_and_Docs/*.png`.
 
 ## 6. Design system (as shipped)
 
-> Earlier drafts used a cyan/teal palette and Space Grotesk. The **shipped** product is monochrome + Archivo/Inter. This section matches the live `global.css`.
+> Earlier drafts used a cyan/teal palette and Space Grotesk. The **shipped** product is monochrome + Archivo/Inter (**self-hosted** `.woff2` files — no CDN). This section matches the live `global.css`.
 
 ### 6.1 Philosophy
 
@@ -228,8 +228,8 @@ Wireframes (planning): `Planning_and_Docs/*.png`.
 | `--bg` | Page background (`#000` dark / `#fff` light) |
 | `--text` | Text and primary borders |
 | `--border` | Soft structural lines |
-| `--font-head` | Archivo |
-| `--font-body` | Inter |
+| `--font-head` | Archivo (local `assets/fonts/Archivo.woff2`) |
+| `--font-body` | Inter (local `assets/fonts/Inter.woff2`) |
 | `--header-h` | Fixed header height (padding offset on `body`) |
 | `--max` | Content max width (~1200px) |
 | `--sp-sm` … `--sp-xl` | Spacing scale |
@@ -320,7 +320,7 @@ Submit control: `<button type="submit">`.
 │   ├── favicon.png
 │   ├── example.jpg           # Ultimate image placeholder
 │   ├── Spaceflight.mp4       # Home hero (loaded late)
-│   ├── fonts/                # Archivo.woff2, Inter.woff2
+│   ├── fonts/                # Archivo.woff2, Inter.woff2 (offline)
 │   └── images/               # Category, journey, ship assets
 ├── Planning_and_Docs/        # Wireframes + viva-practice-questions.md
 ├── image-manifest.md         # Expected image filenames

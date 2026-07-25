@@ -1,4 +1,4 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,15 +17,59 @@ s<!DOCTYPE html>
     <meta name="twitter:title" content="Interstellar Agency | Explore the Unknown">
     <meta name="twitter:description" content="Premium interstellar travel — 90 destinations, 15 packages and a fleet of 15 spaceships.">
     <meta name="description" content="Premium interstellar travel — 90 destinations, 15 packages and a fleet of 15 spaceships.">
+
     <!-- Theme + reveal: apply saved theme before paint; reveal body after JS builds header (or after 2s safety). -->
-    <script>(function(){try{if(localStorage.getItem('theme')==='light')document.documentElement.classList.add('light');}catch(e){}setTimeout(function(){document.documentElement.classList.add('app-ready');},2000);})();</script>
-    <style>html:not(.app-ready) body{visibility:hidden}</style>
-    <noscript><style>html body{visibility:visible!important}</style></noscript>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="stylesheet" href="css/global.css">
-    <script type="application/ld+json">
-    {"@context": "https://schema.org", "@type": "TravelAgency", "name": "Interstellar Agency", "description": "Premium interstellar travel agency offering guided journeys to 90 destinations across six cosmic categories aboard a fleet of 15 spaceships.", "url": "index.html", "logo": "assets/logo.png", "image": "assets/images/journey01.jpg", "areaServed": "The observable universe", "knowsAbout": ["interstellar travel", "exoplanets", "black holes", "nebulas", "natural satellites", "spaceships"]}
-    </script>
+    <script>
+  (function () {
+    try {
+      if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.classList.add('light');
+      }
+    } catch (e) {}
+
+    setTimeout(function () {
+      document.documentElement.classList.add('app-ready');
+    }, 2000);
+  })();
+</script>
+
+<style>
+  html:not(.app-ready) body {
+    visibility: hidden;
+  }
+</style>
+
+<noscript>
+  <style>
+    html body {
+      visibility: visible !important;
+    }
+  </style>
+</noscript>
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="css/global.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Interstellar Agency",
+  "description": "Premium interstellar travel agency offering guided journeys to 90 destinations across six cosmic categories aboard a fleet of 15 spaceships.",
+  "url": "index.html",
+  "logo": "assets/logo.png",
+  "image": "assets/images/journey01.jpg",
+  "areaServed": "The observable universe",
+  "knowsAbout": [
+    "interstellar travel",
+    "exoplanets",
+    "black holes",
+    "nebulas",
+    "natural satellites",
+    "spaceships"
+  ]
+}
+</script>
 </head>
 <body>
 

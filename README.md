@@ -73,7 +73,7 @@ ORION_APEX_CM1605_Sem2_CW/
 ├── data/
 │   ├── destinations.xml    # Master catalogue (rubric source of truth)
 │   └── destinations.js     # Same XML as DESTINATIONS_XML for file://
-├── assets/                 # Logo, fonts, images, hero video
+├── assets/                 # Logo, self-hosted fonts, images, hero video
 ├── Planning_and_Docs/      # Wireframes + viva practice questions
 ├── project-blueprint.md    # Full project blueprint
 └── README.md               # You are here
@@ -117,7 +117,7 @@ destinations.xml  ──►  destinations.js (string)  ──►  DOMParser in a
 ## Design
 
 - **Monochrome chrome** — UI is black/white only; imagery carries colour  
-- **Typography** — Archivo (headings) · Inter (body), both self-hosted  
+- **Typography** — Archivo (headings) · Inter (body), both **self-hosted** offline  
 - **Tokens** — `--bg`, `--text`, `--border` flip for light mode via `html.light`  
 - **Responsive** — CSS Grid / Flexbox, hamburger nav under ~860px  
 - **Motion** — subtle hovers; respects `prefers-reduced-motion`  
